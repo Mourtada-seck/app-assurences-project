@@ -1,7 +1,7 @@
 // src/layouts/UserLayout.jsx
-import Header from '../../user/Header';
-import Sidebar from '../../user/Sidebar';
-import Content from '../../user/Content';
+import Header from '../user/Header';
+import Sidebar from '../user/Sidebar';
+import Content from '../user/Content';
 
 function UserLayout({ children }) {
   return (

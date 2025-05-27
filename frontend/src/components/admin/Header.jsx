@@ -9,7 +9,7 @@ function Header() {
         id="header"
         className="header fixed-top d-flex align-items-center">
         <div className="d-flex align-items-center justify-content-between">
-          <a href="index.html" className="logo d-flex align-items-center">
+          <a href="admin" className="logo d-flex align-items-center">
             <img src="/images/DB_Africa.jpeg" alt="" />
             <span className="d-none d-lg-block">DB Africa</span>
           </a>

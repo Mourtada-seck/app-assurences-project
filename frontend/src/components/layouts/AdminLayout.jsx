@@ -1,6 +1,6 @@
 // src/layouts/AdminLayout.jsx
-import Header from '../Header';
-import Sidebar from '../Sidebar';
+import Header from '../admin/Header';
+import Sidebar from '../admin/Sidebar';
 
 function AdminLayout({ children }) {
   return (

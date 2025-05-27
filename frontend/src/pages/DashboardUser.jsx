@@ -1,11 +1,10 @@
 // src/pages/DashboardUser.jsx
-import UserLayout from '../components/admin/layouts/UserLayout';
+import UserLayout from '../components/layouts/UserLayout';
 
 function DashboardUser() {
   return (
-    <UserLayout>
-      ddddd
-    </UserLayout>
+    <UserLayout />
+    
   );
 }
 

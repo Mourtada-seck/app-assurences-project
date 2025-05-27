@@ -5,7 +5,7 @@ function Sidebar() {
         <ul className="sidebar-nav" id="sidebar-nav">
           <li className="nav-item p-3">
             <h5 className="text-center pb-4">DB Africa</h5>
-            <a className="nav-link " href="index.html">
+            <a className="nav-link " href="user">
               <i className="bi bi-grid" />
               <span>Dashboard</span>
             </a>

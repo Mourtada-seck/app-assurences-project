@@ -1,5 +1,5 @@
 // src/pages/DashboardAdmin.jsx
-import AdminLayout from '../components/admin/layouts/AdminLayout';
+import AdminLayout from '../components/layouts/AdminLayout';
 
 function DashboardAdmin() {
   return (
