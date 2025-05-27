@@ -3,10 +3,8 @@ import AdminLayout from '../components/layouts/AdminLayout';
 
 function DashboardAdmin() {
   return (
-    <AdminLayout>
-      {/* <DashboardWidgets /> */}
-      {/* <DashboardContent /> */}
-    </AdminLayout>
+    <AdminLayout />
+    
   );
 }
 

@@ -11,7 +11,7 @@ function Sidebar() {
         <li className="nav-item"><Link className="nav-link text-white hover-effect" to="/admin/utilisateurs">Utilisateurs</Link></li>
         <li className="nav-item"><Link className="nav-link text-white hover-effect" to="/admin/offres">Offres</Link></li>
         <li className="nav-item"><Link className="nav-link text-white hover-effect" to="/admin/profil">Profil</Link></li>
-        <Link className="bg-danger text-center rounded-3 nav-link text-white hover-effect" to="/logout"
+        <Link className="bg-danger text-center rounded-3 nav-link text-white hover-effect" to="#"
            style={{ marginTop: '230px' }}>Déconnexion</Link>
       </ul>
      
