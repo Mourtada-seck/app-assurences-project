@@ -17,84 +17,84 @@ function Login() {
     alert(`voir les info saisi 👇
         mot de passe :👉 ${password}
         mail :👉 ${email}
-      `)
+      `);
   };
 
   return (
-    <div className="login-page">
-      <div className="container py-5">
-        <div className="row justify-content-center">
-          <div className="col-md-8 col-lg-6">
-            <div className="login-card">
-              <div className="login-header">
-                <h2 className="fw-bold mb-3">Bienvenue 👋</h2>
-                <p className="mb-0">
-                  Connectez-vous pour accéder à votre compte
-                </p>
-              </div>
-              <div className="login-body">
-                <form onSubmit={handleSubmit}>
-                  <div className="floating-label mb-4">
+    <div className="d-lg-flex half">
+      <div
+        className="bg order-1 order-md-2"
+        style={{
+          backgroundImage: 'url("../../../public/images/image-login.webp")',
+        }}
+      />
+      <div className="contents order-2 order-md-1">
+        <div className="container">
+          <div className="row align-items-center justify-content-center">
+            <div className="col-md-7">
+              <h3 className="text-center mb-4 text-dark">
+                Bienvenue chez <strong>DB Africa</strong>
+              </h3>
+              <small
+                className="pb-2 text-dark mobile-text-white"
+                style={{
+                  fontWeight: 700,
+                }}
+              >
+                Entrez vos informations d'identification:
+              </small>
+
+              <form
+                onSubmit={handleSubmit}
+                className="formul p-4 p-md-5 rounded"
+              >
+                <div className="form-group first">
+                  <label htmlFor="email">Email</label>
+                  <input
+                    type="text"
+                    className="form-control"
+                    placeholder="email@gmail.com"
+                    id="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    required
+                  />
+                </div>
+                <div className="form-group last mb-3">
+                  <label htmlFor="password">Password</label>
+                  <input
+                    type="password"
+                    className="form-control"
+                    placeholder="Mot de passe"
+                    id="password"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                    required
+                  />
+                </div>
+                <div className="d-flex mb-5 align-items-center">
+                  <label className="control control--checkbox mb-0">
+                    <span className="caption">Se souvenir de moi</span>
                     <input
-                      type="email"
-                      className="form-control"
-                      id="email"
-                      placeholder=" "
-                      required
-                      value={email}
-                      onChange={(e) => setEmail(e.target.value)}
+                      type="checkbox"
+                      checked={rememberMe}
+                      onChange={(e) => setRememberMe(e.target.checked)}
                     />
-                    <label htmlFor="email">
-                      <i className="fas fa-envelope me-2" />
-                      Adresse email
-                    </label>
-                  </div>
-                  <div className="floating-label mb-4">
-                    <input
-                      type="password"
-                      className="form-control"
-                      id="password"
-                      placeholder=" "
-                      required
-                      value={password}
-                      onChange={(e) => setPassword(e.target.value)}
-                    />
-                    <label htmlFor="password">
-                      <i className="fas fa-lock me-2" />
-                      Mot de passe
-                    </label>
-                  </div>
-                  <div className="d-flex justify-content-between align-items-center mb-4">
-                    <div className="form-check">
-                      <input
-                        className="form-check-input"
-                        type="checkbox"
-                        id="remember"
-                        checked={rememberMe}
-                        onChange={(e) => setRememberMe(e.target.checked)}
-                      />
-                      <label className="form-check-label" htmlFor="remember">
-                        Se souvenir de moi
-                      </label>
-                    </div>
-                    <a href="#" className="text-decoration-none">
-                      Mot de passe oublié?
-                    </a>
-                  </div>
-                  <button
-                    type="submit"
-                    className="btn btn-login text-white mb-4"
-                  >
-                    <i className="fas fa-sign-in-alt me-2" /> Se connecter
-                  </button>
-                  <div className="text-center">
-                    <span className="text-muted">
-                      Si Vous n'avez pas de compte? Veuillez contacter
-                      l'administrateur
-                    </span>
-                  </div>
-                </form>
-              </div>
+                    <div className="control__indicator" />
+                  </label>
+                </div>
+                <input
+                  type="submit"
+                  value="Se connecter"
+                  className="btn btn-block btn-primary"
+                />
+                <div className="pt-4 ">
+                  <p className="text-white">
+                    🔑 Mot de passe oublié ? 📞 Veuillez contacter
+                    l'administrateur
+                  </p>
+                </div>
+              </form>
             </div>
           </div>
         </div>
@@ -104,3 +104,5 @@ function Login() {
 }
 
 export default Login;
+
+
